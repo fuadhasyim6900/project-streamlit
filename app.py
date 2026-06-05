@@ -98,12 +98,12 @@ col1, col2, col3, col4 = st.columns(4)
 
 col1.metric("Target Omset", f"Rp {target/1_000_000_000:.2f} M")
 
-col2.metric("Omset", f"Rp {omset/1_000_000_000:.2f} M", f"{persen_omset:.2f}%")
+col2.metric("Omset", f"Rp {omset/1_000_000_000:.2f} M", f"Achv {persen_omset:.2f}%")
 
 col3.metric("Target AR", f"Rp {target_ar/1_000_000_000:.2f} M")
 
 col4.metric(
-    "Realisasi AR", f"Rp {realisasi/1_000_000_000:.2f} M", f"{persen_realisasi:.2f}%"
+    "Realisasi AR", f"Rp {realisasi/1_000_000_000:.2f} M", f"Achv {persen_realisasi:.2f}%"
 )
 
 st.divider()
