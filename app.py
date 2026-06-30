@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 # CONFIG
 # =====================================================
 
-st.set_page_config(page_title="Dashboard Omset & AR", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Dashboard Omset & AR Tahun 2026", page_icon="📊", layout="wide")
 
 # =====================================================
 # LOAD DATA
