@@ -365,11 +365,3 @@ csv = filtered.to_csv(index=False).encode("utf-8")
 st.download_button(
     "📥 Download CSV", data=csv, file_name="dashboard_export.csv", mime="text/csv"
 )
-
-uploaded_file = st.sidebar.file_uploader("Upload Data Excel", type=["xlsx"])
-
-if uploaded_file is not None:
-    df = pd.read_excel(uploaded_file)
-else:
-    st.warning("Silakan upload file Excel")
-    st.stop()
