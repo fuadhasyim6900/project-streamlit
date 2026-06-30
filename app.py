@@ -61,7 +61,9 @@ df = df.sort_values("BULAN")
 # =====================================================
 
 st.sidebar.header("Filter Dashboard")
-
+if st.sidebar.button("🔄 Refresh Data"):
+    st.cache_data.clear()
+    st.rerun()
 bulan_list = df["BULAN"].dropna().astype(str).unique().tolist()
 
 selected_bulan = st.sidebar.selectbox("Pilih Bulan", ["Semua"] + bulan_list)
