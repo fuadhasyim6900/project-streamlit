@@ -92,7 +92,7 @@ persen_omset = omset / target * 100 if target > 0 else 0
 
 persen_realisasi = realisasi / target_ar * 100 if target_ar > 0 else 0
 
-st.title("📊 Dashboard Omset & AR")
+st.title("📊 Dashboard Omset & AR Tahun 2026")
 
 col1, col2, col3, col4 = st.columns(4)
 
